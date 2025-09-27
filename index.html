@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariage de [Nom Frère] & [Nom Épouse]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500&family=Playfair+Display:ital,wght@1,400&display=swap"
+            rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- Barre en haut -->
+    <header class="topbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <button id="music-btn">🎵</button>
+        <audio id="bg-music" loop>
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+
+        <nav>
+            <ul>
+                <li><a href="#gift" class="btn-section1">Mừng Cưới</a></li>
+                <li><a href="#card" class="btn-section1">Xem Thiệp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page d'accueil -->
+    <section id="accueil" class="hero">
+        <div class="overlay">
+            <h1></h1>
+            <p></p>
+        </div>
+        <canvas id="hearts"></canvas>
+    </section>
+    <!-- Section logo et noms -->
+    <section id="logo-noms" class="logo-noms">
+        <p class="forever">Forever Together</p>
+        <h2>Anh Quốc ❤ Thắm Bùi</h2>
+        <p class="date">12 Octobre 2025</p>
+        <p class="story">
+        Có những cuộc gặp gỡ là ngẫu nhiên, nhưng có những mối lương duyên là định mệnh. <br>
+        Từ hôm nay, chúng tôi cùng nhau viết tiếp câu chuyện của hai trái tim, và xây dựng tổ ấm riêng của mình.      </p>
+        <div class="buttons-section1">
+            <a href="#gift" class="btn-section1">Mừng Cưới</a>
+            <a href="#card" class="btn-section1">Xem Thiệp</a>
+        </div>
+    </section>
+
+    
+    <!-- Section 2 : Envoyer de l'argent / cadeau -->
+    <section id="gift" class="section-gift">
+        <h2>Mừng Cưới</h2>
+        <p>Để gửi cho chúng tôi một món quà nhỏ, hãy nhấp vào hình ảnh bên dưới</p>
+
+        <div class="gift-image" id="show-qr">
+            <img src="envelo.png" alt="Cadeau">
+        </div>
+    
+        <div id="qr-popup" class="qr-popup">
+            <span id="close-qr">&times;</span>
+            <h3>Scannez ce QR Code pour envoyer votre cadeau</h3>
+            <img src="qrcode.png" alt="QR Code" class="qr-image">
+        </div>
+    </section>
+    
+    <!-- Section 3 : Carte de mariage -->
+    <section id="card" class="section-card">
+        <h2>Thiệp Mời</h2>
+        <p>Trân trọng kính mời bạn đến tham dự lễ cưới của chúng tôi!</p>
+
+        <div class="card-container">
+            <div class="card-item">
+                <img src="carte1.png" alt="Carte Mariage 1">
+            </div>
+            <div class="card-item">
+                <img src="carte2.png" alt="Carte Mariage 2">
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
