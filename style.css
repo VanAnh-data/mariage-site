@@ -134,11 +134,6 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.logo-noms h2 {
-  font-size: 2.5rem;
-  color: #b43b3b;
-  margin-bottom: 10px;
-}
 
 .logo-noms p {
   font-size: 1.2rem;
@@ -147,10 +142,10 @@ nav a:hover {
 
 .logo-noms h2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 3.5rem;
+  font-size: 0.5rem;
   color: #b43b3b;
   margin-bottom: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .forever {
   font-family: 'Dancing Script', cursive; /* ou 'Great Vibes' si tu préfères */
@@ -295,7 +290,7 @@ footer {
   }
 
   .logo-noms h2 {
-    font-size: 2.5rem; /* réduire la taille des noms */
+    font-size: 2rem; /* réduire la taille des noms */
   }
 
   .logo-noms .forever {
@@ -306,4 +301,57 @@ footer {
     font-size: 1.2rem;
     max-width: 90%;
   }
+}
+/* Overlay en plein écran */
+.overlay-menu {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* toujours devant */
+}
+
+/* Contenu centré */
+.overlay-content {
+  text-align: center;
+}
+
+.overlay-content h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #b43b3b;
+  margin-bottom: 30px;
+}
+
+.floating-menu {
+  position: fixed;
+  bottom: 20px;   /* 👈 au lieu de top */
+  right: 20px;    /* reste à droite */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.mini-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #b43b3b;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.mini-btn:hover {
+  background: #922d2d;
+  transform: scale(1.1);
 }

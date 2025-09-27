@@ -90,3 +90,9 @@ closeBtn.addEventListener('click', () => {
 qrPopup.addEventListener('click', (e) => {
   if(e.target === qrPopup) qrPopup.style.display = 'none';
 });
+const overlay = document.getElementById('overlay-menu');
+const closeOverlay = document.getElementById('close-overlay');
+
+closeOverlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+});
