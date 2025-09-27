@@ -142,11 +142,18 @@ nav a:hover {
 
 .logo-noms h2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 0.5rem;
+  font-size: 3.5rem;  /* taille normale sur ordi */
   color: #b43b3b;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
+@media screen and (max-width: 768px) {
+  .logo-noms h2 {
+    font-size: 2rem; /* un peu plus petit sur mobile */
+  }
+}
+
 .forever {
   font-family: 'Dancing Script', cursive; /* ou 'Great Vibes' si tu préfères */
   font-size: 3.5rem;  /* taille plus grande */
@@ -290,12 +297,19 @@ footer {
   }
 
   .logo-noms h2 {
-    font-size: 2rem; /* réduire la taille des noms */
-  }
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;  /* taille normale sur ordi */
+  color: #b43b3b;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
 
-  .logo-noms .forever {
-    font-size: 2rem;
+@media screen and (max-width: 768px) {
+  .logo-noms h2 {
+    font-size: 2rem; /* un peu plus petit sur mobile */
   }
+}
+
 
   .logo-noms p.story {
     font-size: 1.2rem;
