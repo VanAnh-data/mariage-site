@@ -1,4 +1,16 @@
 /* Reset */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Très important pour mobile */
+}
+.card-item img, .gift-image img {
+  width: 100%;
+  max-width: 300px; /* limite pour grand écran */
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -271,4 +283,27 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .buttons-section1 {
+    flex-direction: column; /* boutons empilés sur mobile */
+    gap: 15px;
+  }
+
+  .card-container {
+    gap: 15px;
+  }
+
+  .logo-noms h2 {
+    font-size: 2.5rem; /* réduire la taille des noms */
+  }
+
+  .logo-noms .forever {
+    font-size: 2rem;
+  }
+
+  .logo-noms p.story {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
 }
