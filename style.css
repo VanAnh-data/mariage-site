@@ -34,9 +34,39 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  padding: 8px 20px;
   z-index: 100;
 }
+
+.topbar .logo-center img {
+  height: 70px; /* taille du gif */
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: #b43b3b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.topbar a:hover {
+  color: #922d2d;
+}
+.gif-top-left {
+  position: fixed;   /* reste toujours visible à l’écran */
+  bottom: 20px;        /* distance depuis le haut */
+  left: 20px;        /* distance depuis la gauche */
+  width: 60px;       /* taille du GIF */
+  height: auto;
+  z-index: 9999;     /* toujours au-dessus */
+  pointer-events: none; /* ne bloque pas les clics */
+}
+
 
 .logo img {
   width: 50px;
@@ -91,13 +121,15 @@ nav a:hover {
 
 /* Canvas pour les cœurs */
 #hearts {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 9999;         /* 👈 passe au-dessus de tout */
+  pointer-events: none;  /* 👈 ne bloque pas les clics sur le contenu */
 }
+
 
 /* Autres pages */
 .page {
@@ -368,4 +400,8 @@ footer {
 .mini-btn:hover {
   background: #922d2d;
   transform: scale(1.1);
+}
+.gif-section {
+  height: 400px;
+  background: url("happy.gif") center center/cover no-repeat;
 }
